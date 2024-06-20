@@ -45,6 +45,20 @@
     npm install
 ```
 
+## Clonar repositorios 
+- En la unidad clonar el repositorio principal lemon-app
+```bash
+    git clone https://github.com/giselleandrea/lemon-app
+``` 
+--Entrar a cada submodulo correspondiente y clonar los repositorios tanto del back como del front
+```bash
+    cd /lemon-app/lemonevent 
+    git clone  https://github.com/giselleandrea/lemonevent
+
+    cd /lemon-app/lemonfront 
+    git clone https://github.com/giselleandrea/lemonfront
+``` 
+
 ## RUNNING 
 * Backend Ubicacion /lemonapp/lemonevent
 ```bash
