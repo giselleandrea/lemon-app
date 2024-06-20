@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./lemonevent
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend:/rails
+    depends_on:
+      - db
+    environment:
+      - RAILS_ENV=development
+      - DATABASE_HOST=db
+      - DATABASE_USER=postgres
+      - DATABASE_PASSWORD=password
+      - DATABASE_NAME=lemondb
+
+  frontend:
+    build:
+      context: ./lemonfront
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./frontend:/app
+    environment:
+      - REACT_APP_API_URL=http://localhost:3000
+
+  db:
+    image: postgres:14
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: lemondb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
