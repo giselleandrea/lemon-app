@@ -1,0 +1,6 @@
+[submodule "lemonfront"]
+	path = lemonfront
+	url = https://github.com/giselleandrea/lemonfront
+[submodule "lemonevent"]
+	path = lemonevent
+	url = https://github.com/giselleandrea/lemonevent
