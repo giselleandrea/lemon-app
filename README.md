@@ -124,6 +124,7 @@ modelo = models, vista = routes, controlador = controller)
 
 * Estructura de archivos principales:
 
+```bash
 lemonapp
 │
 ├── lemonevent
@@ -172,6 +173,6 @@ lemonapp
 │   ├──Dockerfile
 │   ├──package.json
 │   └──package-lock.json
-│
 ├──docker-compose.yml
 └──README.md
+```
