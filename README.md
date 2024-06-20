@@ -125,7 +125,7 @@ modelo = models, vista = routes, controlador = controller)
 * Estructura de archivos principales:
 
 ```bash
-lemonapp
+lemon-app
 │
 ├── lemonevent
 │   ├── app
