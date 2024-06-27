@@ -76,15 +76,15 @@
 * Ubicacion /lemonapp
 - Version
 ```bash
-    Docker version 26.1.4, build 5650f9b
+    docker-compose version 1.29.2, build 5becea4c
 ``` 
 - Contruir contenedores
 ```bash
-    docker-compose build
+    docker compose build
 ``` 
 - Ejecutar contenedores
 ```bash
-    docker-compose up
+    docker compose up
 ``` 
 
 ## ACERCA DE LA APP

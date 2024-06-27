@@ -12,9 +12,9 @@ services:
       - db
     environment:
       - RAILS_ENV=development
-      - DATABASE_HOST=db
+      - DATABASE_HOST=localhost
       - DATABASE_USER=postgres
-      - DATABASE_PASSWORD=password
+      - DATABASE_PASSWORD=postgresRoot
       - DATABASE_NAME=lemondb
 
   frontend:
@@ -31,7 +31,7 @@ services:
     image: postgres:14
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
+      POSTGRES_PASSWORD: postgresRoot
       POSTGRES_DB: lemondb
     volumes:
       - pgdata:/var/lib/postgresql/data
