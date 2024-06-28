@@ -14,6 +14,7 @@ services:
     build:
       context: ./lemonevent
       dockerfile: Dockerfile
+    privileged: true  
     volumes:
       - ./lemonevent:/rails
     depends_on:
