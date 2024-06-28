@@ -18,11 +18,10 @@ services:
       - ./lemonevent:/rails
     depends_on:
       - db
-    environment:
+    environment:      
       DATABASE_URL: postgres://postgres:postgresRoot@db:5432/lemondb
     ports:
       - "3000:3000"
-    entrypoint: ["/rails/docker-entrypoint"]
 
   frontend:
     build:
