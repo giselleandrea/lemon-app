@@ -60,31 +60,31 @@
 ``` 
 
 ## RUNNING 
-* Backend Ubicacion /lemonapp/lemonevent
+* Backend Ubicacion /lemon-app/lemonevent
 ```bash
     rails server
 
     default http://localhost:3000 
 ```    
-* Frontend Ubicacion /lemonapp/lemonfront
+* Frontend Ubicacion /lemon-app/lemonfront
 ```bash
     npm start
 
     default http://localhost:3001 
 ```    
 ## DOCKER
-* Ubicacion /lemonapp
+* Ubicacion /lemon-app
 - Version
 ```bash
     docker-compose version 1.29.2, build 5becea4c
 ``` 
 - Contruir contenedores
 ```bash
-    docker compose build
+    docker-compose build
 ``` 
 - Ejecutar contenedores
 ```bash
-    docker compose up
+    docker-compose up
 ``` 
 
 ## ACERCA DE LA APP
@@ -154,6 +154,7 @@ lemon-app
 │   │   │  └──json_web_token.rb
 │   ├──Dockerfile
 │   ├──Gemfile
+│   ├──docker-entrypoint
 │   └──Gemfile.lock 
 │
 ├── lemonfront
